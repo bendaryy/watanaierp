@@ -84,7 +84,7 @@ unset($__errorArgs, $__bag); ?>
             </div>
             <div class="form-group mb-4">
                 <div class="d-flex flex-wrap align-items-center justify-content-between">
-                   
+
                     <?php if(Route::has('password.request')): ?>
                         <span><a href="<?php echo e(route('password.request')); ?>"
                                 tabindex="0"><?php echo e(__('Forgot your password?')); ?></a></span>
@@ -129,7 +129,7 @@ unset($__errorArgs, $__bag); ?>
 
 
 
-<script src="<?php echo e(asset('js/jquery.min.js')); ?>"></script>
+
 <script>
     $(document).ready(function() {
         $("#form_data").submit(function(e) {

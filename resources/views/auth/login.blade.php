@@ -74,7 +74,7 @@
             </div>
             <div class="form-group mb-4">
                 <div class="d-flex flex-wrap align-items-center justify-content-between">
-                   
+
                     @if (Route::has('password.request'))
                         <span><a href="{{ route('password.request') }}"
                                 tabindex="0">{{ __('Forgot your password?') }}</a></span>
@@ -158,7 +158,7 @@
     {{Form::close()}}
 @endsection --}}
 
-<script src="{{ asset('js/jquery.min.js') }}"></script>
+{{-- <script src="{{ asset('js/jquery.min.js') }}"></script> --}}
 <script>
     $(document).ready(function() {
         $("#form_data").submit(function(e) {

@@ -16,14 +16,14 @@
     if ($lang == 'ar' || $lang == 'he') {
         $setting['SITE_RTL'] = 'on';
     }
-    elseif($setting['SITE_RTL'] == 'on') 
+    elseif($setting['SITE_RTL'] == 'on')
     {
-        $setting['SITE_RTL'] = 'on';        
+        $setting['SITE_RTL'] = 'on';
     }
     else {
         $setting['SITE_RTL'] = 'off';
     }
-    
+
     $metatitle = isset($setting['meta_title']) ? $setting['meta_title'] : '';
     $metsdesc = isset($setting['meta_desc']) ? $setting['meta_desc'] : '';
     $meta_image = \App\Models\Utility::get_file('uploads/meta/');
@@ -91,7 +91,7 @@
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" id="main-style-link">
     @endif
 
-   
+
     @if (isset($setting['SITE_RTL']) && $setting['SITE_RTL'] == 'on')
         <link rel="stylesheet" href="{{ asset('assets/css/custom-auth-rtl.css') }}" id="main-style-link">
         @else
@@ -121,7 +121,7 @@
                 <nav class="navbar navbar-expand-md default">
                     <div class="container">
                         <div class="navbar-brand">
-                           
+
                         <a class="navbar-brand" href="#">
                             @if ($setting['cust_darklayout'] == 'on')
                                 <img class="logo"
